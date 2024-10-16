@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+</head>
+<body class="body__box">  
+    <div class="mainbox">
+        <header class="header__mainbox">
+            <div class="logo__header__mainbox">Awesome Kanban Board</div>
+            <div class="logo__header__mainbox">Hello, <span id="user_login"></span>!</div>
+            <nav class="nav__header__mainbox">
+                <div class="logo__header__mainbox"><img src="photos/user-avatar.png" alt=""></div>
+                <div class="hamburger-menu__header">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label id="menu__btn_down" class="menu__btn" for="menu__toggle"><img src="photos/Vector.png" alt=""></label>
+                        <label id="menu__btn_up" class="menu__btn" for="menu__toggle"><img src="photos/Vector2.png" alt=""></label>
+                        <span></span>
+                       
+                        <ul class="menu__box" id="menu__box">
+                        
+                        <li><a href="/index.html" class="button__menu__box__log-out" id="button__menu__box__log-out">Log out</a></li> 
+                 </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="table_box_admin" id="admin_table_box"> 
+            <button class="table__button" type="button" id="button__add_user">+ Add user</button> 
+            <button class="table__button" type="button" id="button__delete_user">- Delete user</button>  
+            <ul id="userList">userList</ul> 
+        </div>
+        <div class="table_box_admin" id="user_tasks_admin_box">
+            <h3>Сlick the name to see the tasks.</h3>
+        </div>
+        <footer id = "footer">
+        </footer>
+    </div>
+</body>
+</html>

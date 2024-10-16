@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+</head>
+<body class="body__box">  
+    <div class="mainbox">
+        <header class="header__mainbox" id="user_header__mainbox">
+            <div class="logo__header__mainbox">Awesome Kanban Board</div>
+            <div class="logo__header__mainbox">Hello, <span id="user_login"></span>!</div>
+            <nav class="nav__header__mainbox">
+                <div class="logo__header__mainbox"><img src="photos/user-avatar.png" alt=""></div>
+                <div class="hamburger-menu__header">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label id="menu__btn_down" class="menu__btn" for="menu__toggle"><img src="photos/Vector.png" alt=""></label>
+                        <label id="menu__btn_up" class="menu__btn" for="menu__toggle"><img src="photos/Vector2.png" alt=""></label>
+                        <span></span>
+                       
+                 <ul class="menu__box" id="menu__box">
+                            <li id="user_button__menu__box__account"><button class="button__menu__box__log-out" >My account</button></li> 
+                            <li id="user_button__menu__box__tasks"><button class="button__menu__box__log-out" >My tasks</button> </li>
+                            <li><a href="/index.html" class="button__menu__box__log-out" id="button__menu__box__log-out">Log out</a></li> 
+                       
+                        </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="table_box_admin" id="show_user_tasks"><h3>Сlick the name to see the tasks.</h3></div>
+        <div id = "task_header"><h4>Login: <span id="cliked_login"></span>    Password: <span id="cliked_password"></span>     Tasks:</h4></div>
+        <div class="table_box" id="table_box">
+           
+            <div class="table list backlog_list" id="backlog_list">
+                <h5 class="table_name">Backlog</h5>
+                <input type="text" class="input__text" placeholder="Write your task here" id="input__text"/>  
+                <button class="table__button" type="button" id="backlog__button__add">+ Add card</button> 
+                <button class="table__button" type="button" id="backlog__button__submit">Submit</button>  
+            </div>
+            <div class="table list drop-zone-one"  id="ready_list">
+                <h5 class="table_name">Ready</h5>
+            </div>
+            <div class="table list drop-zone-one" id="in-progress_list">
+                <h5 class="table_name">In Progress</h5>
+            </div>
+            <div class="table list drop-zone-one" id="finished_list">
+                <h5 class="table_name">Finished</h5>
+                <button class="table__button" type="button" id="backlog__button__delete">- Delete card</button>
+                <button class="table__button" type="button" id="backlog__button__cancel">Cancel</button>  
+            </div>
+        </div>
+        <div class="user_box" id="user_box">
+            <h5 class="user_box_name">My account page</h5>
+            <div class="user_box_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of 
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+            software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+        <footer id = "footer">
+            <div class="result">
+                <div class="footer__result__active">Active-tasks: <span id="active-tasks-count"></span></div>
+                <div class="footer__result__finished">Finished-tasks: <span id="finished-tasks-count"></span></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
